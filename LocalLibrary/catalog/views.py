@@ -12,6 +12,14 @@ class BookDetailView(generic.DetailView):
     model = Book
 
 
+class AuthorListView(generic.ListView):
+    model = Author
+
+
+class AuthorDetailView(generic.DetailView):
+    model = Author
+
+
 # Create your views here.
 def index(request):
     """View function for home page of site."""
